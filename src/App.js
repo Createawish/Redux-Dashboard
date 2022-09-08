@@ -19,7 +19,7 @@ function App() {
      <TheHeader />
      <div className='container'>
       <FilterPanel />
-      <JobList />
+      {/*<JobList />*/}
      </div>
     </>
   );
