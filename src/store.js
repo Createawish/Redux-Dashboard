@@ -1,6 +1,6 @@
 import {configureStore} from "@reduxjs/toolkit";
-import {positionReducer} from "./src/features/positions/position-slice";
-import {filterReducer} from './src/features/filters/filter-slice';
+import {positionReducer} from "./features/positions/position-slice";
+import {filterReducer} from './features/filters/filter-slice';
 
 
 export const store = configureStore({
