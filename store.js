@@ -1,10 +1,13 @@
 import {configureStore} from "@reduxjs/toolkit";
-import {filterReduser} from "./src/store/filres/filters-reduser";
+import {positionReducer} from "./src/features/positions/position-slice";
+import {filterReducer} from './src/features/filters/filter-slice';
 
 
 export const store = configureStore({
         reducer: {
-            filters: filterReduser()
+            filters: filterReducer,
+            positions: positionReducer
         },
+    devTools: true
     }
 );
